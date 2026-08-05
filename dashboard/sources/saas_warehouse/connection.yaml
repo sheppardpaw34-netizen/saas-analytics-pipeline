@@ -1,0 +1,5 @@
+# This file was automatically generated
+name: saas_warehouse
+type: duckdb
+options:
+  filename: "../../../saas_warehouse.duckdb"
