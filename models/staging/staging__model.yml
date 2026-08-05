@@ -1,0 +1,22 @@
+version: 2
+models:
+  - name: stg_stripe_customers
+    description: "Clean staged view for customers record"
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      - name: name
+        tests:
+          - not_null
+      - name: email
+        tests: 
+          - not_null
+      - name: currency
+        tests:
+          - accepted_values:
+              values: ['usd', 'eur', 'gbp', 'cad']
+      - name: created_at
+        tests:
+          - not_null            
