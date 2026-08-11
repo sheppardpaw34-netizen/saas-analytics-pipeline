@@ -1,0 +1,21 @@
+version: 2 
+models:
+  - name: fct_monthly_mart_metrics
+    description: "High-level executive mart containing company-wide subscription Saas KPI,active customers count,arpu."
+    columns: 
+      - name: total_active_mrr
+        description: "Sum of current monthly recurring revenue accross all active subscriptions"
+        tests: 
+          - not_null
+      - name: total_active_customers
+        description: "Headcounts of customers with at least one month of active subscription"
+        tests: 
+          - not_null
+      - name: total_churned_customers
+        description: "Headcount of customer with zero active subscription"
+        tests:
+          - not_null
+      - name: apru
+        description: "Average revenue per users (Total mrr divided by total active subscriber)"
+        tests:
+          - not_null

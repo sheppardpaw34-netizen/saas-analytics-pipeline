@@ -1,0 +1,6 @@
+invoice_id,subscription_id,customer_id,amount_due,amount_paid,status,created_at
+inv_201,sub_101,cus_001,49.00,49.00,paid,2025-01-12 14:30:00 UTC
+inv_202,sub_102,cus_002,299.00,299.00,paid,2025-02-03 09:20:00 UTC
+inv_203,sub_103,cus_003,19.00,19.00,paid,2025-02-18 19:00:00 UTC
+inv_204,sub_104,cus_004,49.00,0.00,open,2025-03-01 11:15:00 UTC
+inv_205,sub_105,cus_005,299.00,299.00,paid,2025-03-22 16:10:00 UTC

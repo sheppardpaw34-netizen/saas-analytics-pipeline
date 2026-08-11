@@ -1,0 +1,1 @@
+SELECT * FROM fct_monthly_mart_metrics;
